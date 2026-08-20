@@ -989,7 +989,6 @@ function updateNav(lang){
 }
 
 var PAGES = ['fr','de','en'];
-var LANG_LABELS = {fr:'🇫🇷 Français', de:'🇩🇪 Deutsch', en:'🇬🇧 English'};
 
 function setLang(lang){
   // Switch visible section
@@ -997,9 +996,10 @@ function setLang(lang){
     var el = document.getElementById('page-'+code);
     if(el) el.style.display = (code===lang) ? 'block' : 'none';
   });
-  // Update current label
+  // Update current label using the existing LANG_LABELS format {flag, label}
   var cur = document.getElementById('lang-current');
-  if(cur) cur.textContent = LANG_LABELS[lang] || lang;
+  var lbl = LANG_LABELS[lang];
+  if(cur && lbl) cur.textContent = lbl.flag + ' ' + lbl.label;
   // Update active state on options
   PAGES.forEach(function(code){
     var opt = document.getElementById('opt-'+code);
@@ -1014,12 +1014,10 @@ function setLang(lang){
   if(wrap) wrap.removeAttribute('open');
 }
 
-// Wire up option buttons via addEventListener (works everywhere, incl. local files)
-document.addEventListener('DOMContentLoaded', function(){
-  PAGES.forEach(function(code){
-    var opt = document.getElementById('opt-'+code);
-    if(opt) opt.addEventListener('click', function(){ setLang(code); });
-  });
+// Wire up option buttons — script is at end of body so DOM is already ready
+PAGES.forEach(function(code){
+  var opt = document.getElementById('opt-'+code);
+  if(opt) opt.addEventListener('click', function(){ setLang(code); });
 });
 
 // Close details dropdown when clicking outside
