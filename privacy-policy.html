@@ -107,7 +107,7 @@ h2{font-size:1.4rem;font-weight:700;color:var(--primary);text-align:center}
 .c-indigo{background:#eef2ff;border-color:#c7d2fe;color:#4338ca}
 .acc-label{flex:1;font-size:15px;font-weight:600;color:var(--fg)}
 .acc-chevron{transition:transform .25s;color:var(--fg-muted);flex-shrink:0}
-.acc-btn[aria-expanded="true"] .acc-chevron{transform:rotate(180deg)}
+.acc-btn[aria-expanded="false"] .acc-chevron{transform:rotate(180deg)}
 .acc-body{display:none;padding:0 24px 24px;border-top:1px solid var(--border)}
 .acc-body.open{display:block}
 .acc-body>p{color:var(--fg-muted);line-height:1.7;margin-bottom:10px}
@@ -259,18 +259,41 @@ footer{background:#fff;border-top:1px solid var(--border);padding:24px;text-alig
     </div>
   </div>
 
+  <!-- BILLING -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Achats, abonnements &amp; remboursements</h2></div>
+      <p class="section-desc">Tout ce que vous devez savoir sur les achats in-app Google Play</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
+      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+      <span class="acc-label">Achats in-app et abonnements</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Offres disponibles</div><div class="item-desc">Build+ Pro (abonnement annuel) — accès illimité à toutes les fonctionnalités. Plan Étudiant (abonnement annuel réduit, vérification éligibilité requise). Starter (achat unique, 30 jours / 350 photos).</div></div><div class="item-card"><div class="item-label">Gestion via Google Play</div><div class="item-desc">Tous les achats sont traités par Google Play Billing. Build+ ne collecte ni ne stocke aucune information bancaire ou de paiement.</div></div><div class="item-card"><div class="item-label">Renouvellement automatique</div><div class="item-desc">Les abonnements annuels se renouvellent automatiquement sauf résiliation au moins 24 heures avant la date de renouvellement. La résiliation s'effectue dans les paramètres de votre compte Google Play.</div></div><div class="item-card"><div class="item-label">Période d'essai gratuite</div><div class="item-desc">Build+ offre une période d'essai gratuite de 30 jours. Aucune carte bancaire n'est requise pendant l'essai.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+      <span class="acc-label">Suppression du compte et des données</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Procédure de suppression</div><div class="item-desc">Pour supprimer l'ensemble de vos données : (1) Ouvrez Build+ > Paramètres > Confidentialité > Supprimer mes données, ou (2) Désinstallez l'application — toutes les données locales sont effacées automatiquement.</div></div><div class="item-card"><div class="item-label">Données de messagerie</div><div class="item-desc">Les messages chiffrés transitent via des relais Nostr. Vous pouvez supprimer vos données de messagerie locales depuis l'application. Les copies présentes sur les appareils de vos correspondants ne sont pas sous notre contrôle.</div></div><div class="item-card"><div class="item-label">Données Google Play</div><div class="item-desc">Pour les données liées à votre compte Google (achats, historique), la suppression s'effectue depuis les paramètres Google Play.</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
   <!-- ESSENTIALS -->
   <div class="section">
     <div class="container content-wrap">
       <h2>L'essentiel en un coup d'œil</h2>
       <p class="section-desc">Les points clés de votre utilisation de Build+</p>
       <div class="accordion"><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="true">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
       <span class="acc-icon c-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
       <span class="acc-label">Responsabilité de l'utilisateur</span>
       <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
     </button>
-    <div class="acc-body open"><p>L'utilisateur est seul responsable des fichiers transmis, notamment en ce qui concerne leur contenu, leur légalité et les droits associés.</p><p>Build+ met à disposition des outils de transmission et de gestion de fichiers. L'application ne vérifie pas, ne contrôle pas et ne valide pas le contenu des fichiers échangés.</p></div>
+    <div class="acc-body"><p>L'utilisateur est seul responsable des fichiers transmis, notamment en ce qui concerne leur contenu, leur légalité et les droits associés.</p><p>Build+ met à disposition des outils de transmission et de gestion de fichiers. L'application ne vérifie pas, ne contrôle pas et ne valide pas le contenu des fichiers échangés.</p></div>
   </div><div class="acc-item">
     <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
       <span class="acc-icon c-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span>
@@ -299,29 +322,6 @@ footer{background:#fff;border-top:1px solid var(--border);padding:24px;text-alig
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Dessins et formes sur photos</div>
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Rapports PDF générés</div>
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Liste des contacts et projets</div></div><p class="data-note">Ces données ne quittent jamais l'appareil de l'utilisateur, sauf lors d'un partage explicitement initié par celui-ci.</p></div>
-  </div></div>
-    </div>
-  </div>
-
-  <!-- BILLING -->
-  <div class="section">
-    <div class="container content-wrap">
-      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Achats, abonnements &amp; remboursements</h2></div>
-      <p class="section-desc">Tout ce que vous devez savoir sur les achats in-app Google Play</p>
-      <div class="accordion"><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="true">
-      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
-      <span class="acc-label">Achats in-app et abonnements</span>
-      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
-    </button>
-    <div class="acc-body open"><div class="item-card"><div class="item-label">Offres disponibles</div><div class="item-desc">Build+ Pro (abonnement annuel) — accès illimité à toutes les fonctionnalités. Plan Étudiant (abonnement annuel réduit, vérification éligibilité requise). Starter (achat unique, 30 jours / 350 photos).</div></div><div class="item-card"><div class="item-label">Gestion via Google Play</div><div class="item-desc">Tous les achats sont traités par Google Play Billing. Build+ ne collecte ni ne stocke aucune information bancaire ou de paiement.</div></div><div class="item-card"><div class="item-label">Renouvellement automatique</div><div class="item-desc">Les abonnements annuels se renouvellent automatiquement sauf résiliation au moins 24 heures avant la date de renouvellement. La résiliation s'effectue dans les paramètres de votre compte Google Play.</div></div><div class="item-card"><div class="item-label">Politique de remboursement</div><div class="item-desc">Les remboursements sont soumis à la politique de remboursement de Google Play. Build+ peut, à sa discrétion, accorder un remboursement dans les 48h suivant l'achat sur demande à le formulaire de contact sur buildplus.ch.</div></div><div class="item-card"><div class="item-label">Période d'essai gratuite</div><div class="item-desc">Build+ offre une période d'essai gratuite de 30 jours ou 350 photos (premier des deux). Aucune carte bancaire n'est requise pendant l'essai.</div></div></div>
-  </div><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
-      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
-      <span class="acc-label">Suppression du compte et des données</span>
-      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
-    </button>
-    <div class="acc-body"><div class="item-card"><div class="item-label">Procédure de suppression</div><div class="item-desc">Pour supprimer l'ensemble de vos données : (1) Ouvrez Build+ > Paramètres > Confidentialité > Supprimer mes données, ou (2) Désinstallez l'application — toutes les données locales sont effacées automatiquement.</div></div><div class="item-card"><div class="item-label">Données de messagerie</div><div class="item-desc">Les messages chiffrés transitent via des relais Nostr. Vous pouvez supprimer vos données de messagerie locales depuis l'application. Les copies présentes sur les appareils de vos correspondants ne sont pas sous notre contrôle.</div></div><div class="item-card"><div class="item-label">Données Google Play</div><div class="item-desc">Pour les données liées à votre compte Google (achats, historique), la suppression s'effectue depuis les paramètres Google Play.</div></div></div>
   </div></div>
     </div>
   </div>
@@ -481,18 +481,41 @@ footer{background:#fff;border-top:1px solid var(--border);padding:24px;text-alig
     </div>
   </div>
 
+  <!-- BILLING -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Käufe, Abonnements &amp; Erstattungen</h2></div>
+      <p class="section-desc">Alles zu In-App-Käufen über Google Play</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
+      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+      <span class="acc-label">In-App-Käufe und Abonnements</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Verfügbare Angebote</div><div class="item-desc">Build+ Pro (Jahresabo), Studentenplan (reduziertes Jahresabo), Starter (Einmalkauf, 30 Tage / 350 Fotos).</div></div><div class="item-card"><div class="item-label">Google Play Billing</div><div class="item-desc">Alle Käufe über Google Play abgewickelt. Keine Zahlungsdaten bei Build+ gespeichert.</div></div><div class="item-card"><div class="item-label">Automatische Verlängerung</div><div class="item-desc">Jahresabos verlängern sich automatisch. Kündigung über Google Play-Kontoeinstellungen.</div></div><div class="item-card"><div class="item-label">Kostenlose Testphase</div><div class="item-desc">Build+ bietet eine kostenlose Testphase von 30 Tagen. Keine Kreditkarte erforderlich.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+      <span class="acc-label">Datenlöschung</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Löschverfahren</div><div class="item-desc">Build+ > Einstellungen > Datenschutz > Meine Daten löschen, oder App deinstallieren.</div></div><div class="item-card"><div class="item-label">Nachrichtendaten</div><div class="item-desc">Lokal löschbar aus der App. Kopien auf anderen Geräten liegen außerhalb unserer Kontrolle.</div></div><div class="item-card"><div class="item-label">Google Play Daten</div><div class="item-desc">Über die Google Play-Kontoeinstellungen.</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
   <!-- ESSENTIALS -->
   <div class="section">
     <div class="container content-wrap">
       <h2>Das Wichtigste auf einen Blick</h2>
       <p class="section-desc">Die wichtigsten Punkte Ihrer Build+-Nutzung</p>
       <div class="accordion"><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="true">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
       <span class="acc-icon c-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
       <span class="acc-label">Verantwortung des Nutzers</span>
       <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
     </button>
-    <div class="acc-body open"><p>Der Nutzer ist allein verantwortlich für die übertragenen Dateien, insbesondere hinsichtlich ihres Inhalts, ihrer Rechtmäßigkeit und der damit verbundenen Rechte.</p><p>Build+ stellt Werkzeuge zur Übertragung und Verwaltung von Dateien bereit. Die Anwendung prüft, kontrolliert und validiert den Inhalt der ausgetauschten Dateien nicht.</p></div>
+    <div class="acc-body"><p>Der Nutzer ist allein verantwortlich für die übertragenen Dateien, insbesondere hinsichtlich ihres Inhalts, ihrer Rechtmäßigkeit und der damit verbundenen Rechte.</p><p>Build+ stellt Werkzeuge zur Übertragung und Verwaltung von Dateien bereit. Die Anwendung prüft, kontrolliert und validiert den Inhalt der ausgetauschten Dateien nicht.</p></div>
   </div><div class="acc-item">
     <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
       <span class="acc-icon c-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span>
@@ -521,29 +544,6 @@ footer{background:#fff;border-top:1px solid var(--border);padding:24px;text-alig
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Zeichnungen und Formen auf Fotos</div>
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Erstellte PDF-Berichte</div>
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Kontakt- und Projektliste</div></div><p class="data-note">Diese Daten verlassen das Gerät des Nutzers nie, außer bei einer explizit vom Nutzer initiierten Freigabe.</p></div>
-  </div></div>
-    </div>
-  </div>
-
-  <!-- BILLING -->
-  <div class="section">
-    <div class="container content-wrap">
-      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Käufe, Abonnements &amp; Erstattungen</h2></div>
-      <p class="section-desc">Alles zu In-App-Käufen über Google Play</p>
-      <div class="accordion"><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="true">
-      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
-      <span class="acc-label">In-App-Käufe und Abonnements</span>
-      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
-    </button>
-    <div class="acc-body open"><div class="item-card"><div class="item-label">Verfügbare Angebote</div><div class="item-desc">Build+ Pro (Jahresabo), Studentenplan (reduziertes Jahresabo), Starter (Einmalkauf, 30 Tage / 350 Fotos).</div></div><div class="item-card"><div class="item-label">Google Play Billing</div><div class="item-desc">Alle Käufe über Google Play abgewickelt. Keine Zahlungsdaten bei Build+ gespeichert.</div></div><div class="item-card"><div class="item-label">Automatische Verlängerung</div><div class="item-desc">Jahresabos verlängern sich automatisch. Kündigung über Google Play-Kontoeinstellungen.</div></div><div class="item-card"><div class="item-label">Rückerstattungsrichtlinie</div><div class="item-desc">Gemäß Google Play-Richtlinie. Build+ kann nach eigenem Ermessen innerhalb von 48h erstatten: le formulaire de contact sur buildplus.ch</div></div><div class="item-card"><div class="item-label">Kostenlose Testphase</div><div class="item-desc">30 Tage oder 350 Fotos kostenlos. Keine Kreditkarte erforderlich.</div></div></div>
-  </div><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
-      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
-      <span class="acc-label">Datenlöschung</span>
-      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
-    </button>
-    <div class="acc-body"><div class="item-card"><div class="item-label">Löschverfahren</div><div class="item-desc">Build+ > Einstellungen > Datenschutz > Meine Daten löschen, oder App deinstallieren.</div></div><div class="item-card"><div class="item-label">Nachrichtendaten</div><div class="item-desc">Lokal löschbar aus der App. Kopien auf anderen Geräten liegen außerhalb unserer Kontrolle.</div></div><div class="item-card"><div class="item-label">Google Play Daten</div><div class="item-desc">Über die Google Play-Kontoeinstellungen.</div></div></div>
   </div></div>
     </div>
   </div>
@@ -703,18 +703,41 @@ footer{background:#fff;border-top:1px solid var(--border);padding:24px;text-alig
     </div>
   </div>
 
+  <!-- BILLING -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Purchases, subscriptions &amp; refunds</h2></div>
+      <p class="section-desc">Everything about in-app purchases via Google Play</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
+      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+      <span class="acc-label">In-app purchases and subscriptions</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Available plans</div><div class="item-desc">Build+ Pro (annual subscription), Student Plan (reduced annual, eligibility required), Starter (one-time purchase, 30 days / 350 photos).</div></div><div class="item-card"><div class="item-label">Google Play Billing</div><div class="item-desc">All purchases processed via Google Play. No payment data stored by Build+.</div></div><div class="item-card"><div class="item-label">Automatic renewal</div><div class="item-desc">Annual subscriptions auto-renew. Cancel anytime in Google Play account settings.</div></div><div class="item-card"><div class="item-label">Free trial</div><div class="item-desc">Build+ offers a free 30-day trial. No credit card required.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+      <span class="acc-label">Data deletion</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Deletion procedure</div><div class="item-desc">Build+ > You can delete your data by uninstalling the app. All local data (photos, plans, reports, messaging identity) is erased upon uninstallation. Only data related to the purchase of a licence remains in the relay in order to restore the purchased licence.</div></div><div class="item-card"><div class="item-label">Messaging data</div><div class="item-desc">Deletable from the app. Copies on other devices are outside our control.</div></div><div class="item-card"><div class="item-label">Google Play data</div><div class="item-desc">Via Google Play account settings.</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
   <!-- ESSENTIALS -->
   <div class="section">
     <div class="container content-wrap">
       <h2>Key points at a glance</h2>
       <p class="section-desc">The most important points about using Build+</p>
       <div class="accordion"><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="true">
+    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
       <span class="acc-icon c-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
       <span class="acc-label">User responsibility</span>
       <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
     </button>
-    <div class="acc-body open"><p>The user is solely responsible for the files transmitted, particularly regarding their content, legality and associated rights.</p><p>Build+ provides tools for transmitting and managing files. The application does not verify, control or validate the content of exchanged files.</p></div>
+    <div class="acc-body"><p>The user is solely responsible for the files transmitted, particularly regarding their content, legality and associated rights.</p><p>Build+ provides tools for transmitting and managing files. The application does not verify, control or validate the content of exchanged files.</p></div>
   </div><div class="acc-item">
     <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
       <span class="acc-icon c-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span>
@@ -743,29 +766,6 @@ footer{background:#fff;border-top:1px solid var(--border);padding:24px;text-alig
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Drawings and shapes on photos</div>
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Generated PDF reports</div>
     <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Contact and project list</div></div><p class="data-note">This data never leaves the user's device, except when a share is explicitly initiated by the user.</p></div>
-  </div></div>
-    </div>
-  </div>
-
-  <!-- BILLING -->
-  <div class="section">
-    <div class="container content-wrap">
-      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Purchases, subscriptions &amp; refunds</h2></div>
-      <p class="section-desc">Everything about in-app purchases via Google Play</p>
-      <div class="accordion"><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="true">
-      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
-      <span class="acc-label">In-app purchases and subscriptions</span>
-      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
-    </button>
-    <div class="acc-body open"><div class="item-card"><div class="item-label">Available plans</div><div class="item-desc">Build+ Pro (annual subscription), Student Plan (reduced annual, eligibility required), Starter (one-time purchase, 30 days / 350 photos).</div></div><div class="item-card"><div class="item-label">Google Play Billing</div><div class="item-desc">All purchases processed via Google Play. No payment data stored by Build+.</div></div><div class="item-card"><div class="item-label">Automatic renewal</div><div class="item-desc">Annual subscriptions auto-renew. Cancel anytime in Google Play account settings.</div></div><div class="item-card"><div class="item-label">Refund policy</div><div class="item-desc">Subject to Google Play refund policy. Build+ may at its discretion refund within 48h: le formulaire de contact sur buildplus.ch</div></div><div class="item-card"><div class="item-label">Free trial</div><div class="item-desc">30 days or 350 photos free. No credit card required.</div></div></div>
-  </div><div class="acc-item">
-    <button class="acc-btn" onclick="accToggle(this)" aria-expanded="false">
-      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
-      <span class="acc-label">Data deletion</span>
-      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
-    </button>
-    <div class="acc-body"><div class="item-card"><div class="item-label">Deletion procedure</div><div class="item-desc">Build+ > You can delete your data by uninstalling the app. All local data (photos, plans, reports, messaging identity) is erased upon uninstallation. Only data related to the purchase of a licence remains in the relay in order to restore the purchased licence.</div></div><div class="item-card"><div class="item-label">Messaging data</div><div class="item-desc">Deletable from the app. Copies on other devices are outside our control.</div></div><div class="item-card"><div class="item-label">Google Play data</div><div class="item-desc">Via Google Play account settings.</div></div></div>
   </div></div>
     </div>
   </div>
