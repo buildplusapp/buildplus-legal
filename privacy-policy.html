@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy / Politique de confidentialité — Build+ (com.chantierlocal.app)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#1a5f7a;
+  --primary-light:#e8f4f7;
+  --primary-border:#b8d8e5;
+  --primary-hover:#1a4f66;
+  --fg:#2c3e50;
+  --fg-muted:#64748b;
+  --bg:#ffffff;
+  --bg-muted:#f8fafc;
+  --border:#e2eaee;
+  --radius:1rem;
+  --accent:#4caf50;
+  --secondary:#ffc107;
+}
+body{font-family:'Outfit',sans-serif;color:var(--fg);background:var(--bg);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+svg{display:block;flex-shrink:0}
+
+/* ── HEADER ── */
+header{position:sticky;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 1px 12px rgba(0,0,0,0.08)}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none}
+.logo img{height:36px;width:auto;object-fit:contain}
+nav{display:flex;align-items:center;gap:24px;position:absolute;left:50%;transform:translateX(-50%)}
+.nav-link{font-size:14px;font-weight:500;color:var(--fg-muted);transition:color .15s;text-decoration:none;white-space:nowrap}
+.nav-link:hover,.nav-link.active{color:var(--primary);text-decoration:none}
+.features-wrap{position:relative}
+.features-btn{display:flex;align-items:center;gap:4px;font-size:14px;font-weight:500;color:var(--fg-muted);background:none;border:none;cursor:pointer;padding:0;transition:color .15s;font-family:inherit}
+.features-btn:hover{color:var(--primary)}
+.features-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;width:240px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.1);overflow:hidden;z-index:200}
+.features-wrap:hover .features-dropdown{display:block}
+.features-dropdown a{display:block;padding:10px 16px;font-size:13px;color:var(--fg-muted);transition:all .15s}
+.features-dropdown a:hover{background:var(--primary-light);color:var(--primary);text-decoration:none}
+.lang-wrap{position:relative;list-style:none}
+.lang-wrap summary{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:var(--fg-muted);background:none;border:none;cursor:pointer;padding:6px 8px;border-radius:8px;font-family:inherit;transition:all .15s;list-style:none}
+.lang-wrap summary::-webkit-details-marker{display:none}
+.lang-wrap summary:hover{background:var(--primary-light);color:var(--primary)}
+.lang-btn{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:var(--fg-muted);background:none;border:none;cursor:pointer;padding:6px 8px;border-radius:8px;font-family:inherit;transition:all .15s}
+.lang-btn:hover{background:var(--primary-light);color:var(--primary)}
+.lang-dropdown{display:none;position:absolute;top:calc(100% + 6px);right:0;width:160px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.1);overflow:hidden;z-index:200}
+.lang-wrap[open] .lang-dropdown{display:block}
+.lang-option{display:flex;align-items:center;gap:8px;width:100%;padding:10px 16px;font-size:13px;color:var(--fg-muted);background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;transition:all .15s}
+.lang-option:hover,.lang-option.active{background:var(--primary-light);color:var(--primary)}
+.lang-option.active{font-weight:600}
+/* Mobile */
+.mobile-menu-btn{display:none;background:none;border:none;cursor:pointer;padding:4px;color:var(--primary)}
+@media(max-width:768px){
+  nav{display:none}
+  .mobile-menu-btn{display:flex}
+  .header-inner{height:60px}
+}
+
+/* ── LAYOUT ── */
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.content-wrap{max-width:820px;margin:0 auto}
+.content-wrap-sm{max-width:640px;margin:0 auto}
+
+/* ── HERO ── */
+.hero{padding:80px 0 60px;background:linear-gradient(to bottom,var(--primary-light),#fff);border-bottom:1px solid var(--border)}
+.hero .hero-inner{max-width:820px;margin:0 auto;text-align:center}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--fg-muted);margin-bottom:32px;transition:color .15s}
+.back-link:hover{color:var(--primary);text-decoration:none}
+.hero-title-row{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:16px}
+.hero-icon{width:64px;height:64px;border-radius:16px;background:var(--primary-light);border:1px solid var(--primary-border);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hero-icon svg{color:var(--primary)}
+h1{font-size:2rem;font-weight:700;color:var(--primary)}
+.hero-desc{font-size:16px;color:var(--fg-muted);line-height:1.7;max-width:600px;margin:0 auto 12px}
+.hero-date{font-size:13px;color:var(--fg-muted);margin-bottom:20px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600;background:#dcfce7;color:#15803d;border:1px solid #bbf7d0}
+
+/* ── SECTIONS ── */
+.section{padding:72px 0}
+.section-alt{background:var(--bg-muted);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.section-head{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:8px}
+.section-head svg{color:var(--primary)}
+h2{font-size:1.4rem;font-weight:700;color:var(--primary);text-align:center}
+.section-desc{text-align:center;color:var(--fg-muted);margin-bottom:40px;font-size:15px}
+
+/* ── ACCORDION ── */
+.accordion{display:flex;flex-direction:column;gap:12px}
+.acc-item{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .2s}
+.acc-item:hover{border-color:rgba(26,95,122,.25)}
+.acc-btn{width:100%;display:flex;align-items:center;gap:14px;padding:20px 24px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit}
+.acc-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid transparent}
+.c-orange{background:#fff7ed;border-color:#fed7aa;color:#c2410c}
+.c-blue  {background:#eff6ff;border-color:#bfdbfe;color:#1d4ed8}
+.c-teal  {background:#f0fdfa;border-color:#99f6e4;color:#0f766e}
+.c-purple{background:#faf5ff;border-color:#e9d5ff;color:#7e22ce}
+.c-green {background:#f0fdf4;border-color:#bbf7d0;color:#15803d}
+.c-cyan  {background:#ecfeff;border-color:#a5f3fc;color:#0e7490}
+.c-red   {background:#fef2f2;border-color:#fecaca;color:#b91c1c}
+.c-yellow{background:#fefce8;border-color:#fef08a;color:#a16207}
+.c-indigo{background:#eef2ff;border-color:#c7d2fe;color:#4338ca}
+.acc-label{flex:1;font-size:15px;font-weight:600;color:var(--fg)}
+.acc-chevron{transition:transform .25s;color:var(--fg-muted);flex-shrink:0}
+.acc-btn[aria-expanded="true"] .acc-chevron{transform:rotate(180deg)}
+.acc-body{display:none;padding:0 24px 24px;border-top:1px solid var(--border)}
+.acc-body.open{display:block}
+.acc-body>p{color:var(--fg-muted);line-height:1.7;margin-bottom:10px}
+.acc-body>p:last-child{margin-bottom:0}
+
+/* ── ITEM CARDS ── */
+.item-card{padding:14px 16px;background:var(--bg-muted);border:1px solid var(--border);border-radius:10px;margin-bottom:10px}
+.item-card:last-child{margin-bottom:0}
+.item-label{font-size:13px;font-weight:600;color:var(--fg);margin-bottom:4px}
+.item-desc{font-size:13px;color:var(--fg-muted);line-height:1.6}
+.section-intro{color:var(--fg-muted);line-height:1.7;margin-bottom:16px;font-size:14px}
+
+/* ── SERVICE CARDS ── */
+.service-grid{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.service-card{display:flex;gap:12px;padding:14px 16px;background:var(--bg-muted);border:1px solid var(--border);border-radius:10px}
+.svc-icon{color:var(--primary);flex-shrink:0;margin-top:2px}
+.svc-name{font-size:13px;font-weight:600;color:var(--fg);margin-bottom:3px}
+.svc-desc{font-size:12px;color:var(--fg-muted);line-height:1.5}
+
+/* ── DATA ITEMS ── */
+.data-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+@media(max-width:500px){.data-grid{grid-template-columns:1fr}}
+.data-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--fg-muted)}
+.data-check{color:var(--accent);flex-shrink:0}
+.data-note{font-size:13px;color:var(--fg-muted);margin-top:14px;font-style:italic;border-left:2px solid var(--primary-border);padding-left:12px;line-height:1.6}
+
+/* ── ARTICLES ── */
+.articles{display:flex;flex-direction:column;gap:12px}
+.art-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px 24px}
+.art-title{font-size:14px;font-weight:600;color:var(--fg);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.art-num{width:24px;height:24px;border-radius:50%;background:var(--primary-light);color:var(--primary);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;border:1px solid var(--primary-border);flex-shrink:0}
+.art-body{font-size:13px;color:var(--fg-muted);line-height:1.7}
+
+/* ── CONTACT ── */
+.contact-section{padding:64px 0;background:var(--bg-muted);border-top:1px solid var(--border)}
+.contact-inner{text-align:center}
+.contact-icon{display:flex;justify-content:center;margin-bottom:16px}
+.contact-icon svg{color:var(--primary)}
+.contact-btns{display:flex;flex-direction:column;gap:10px;align-items:center;margin-top:24px}
+@media(min-width:480px){.contact-btns{flex-direction:row;justify-content:center}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:600;transition:opacity .15s;text-decoration:none;font-family:inherit}
+.btn:hover{opacity:.85;text-decoration:none}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-outline{background:#fff;color:var(--fg);border:1px solid var(--border)}
+
+footer{background:#fff;border-top:1px solid var(--border);padding:24px;text-align:center;font-size:12px;color:var(--fg-muted)}
+
+/* ── PRIVACY POLICY BANNER ── */
+.pp-top-banner{background:var(--primary);color:#fff;text-align:center;padding:16px 24px;line-height:1.5}
+.pp-top-banner .pp-en{font-size:20px;font-weight:800;display:block;margin-bottom:3px;letter-spacing:-0.3px}
+.pp-top-banner .pp-sub{font-size:13px;font-weight:400;opacity:.8}
+
+[data-page]{display:none}
+[data-page="en"]{display:block}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="header-inner">
+    <a href="https://buildplus.ch" class="logo">
+      <span style="font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;color:var(--primary);letter-spacing:-0.5px">Build+</span>
+    </a>
+    <nav id="main-nav">
+      <a href="https://buildplus.ch" class="nav-link" data-key="home">Accueil</a>
+      <div class="features-wrap">
+        <button class="features-btn">
+          <span data-key="features">Fonctionnalités</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="features-dropdown" id="feat-dropdown"></div>
+      </div>
+      <a href="https://buildplus.ch/securite" class="nav-link" data-key="security">Sécurité</a>
+      <a href="https://buildplus.ch/tarifs" class="nav-link" data-key="pricing">Tarifs</a>
+      <a href="https://buildplus.ch/contact" class="nav-link" data-key="contact">Contact</a>
+    </nav>
+    <details class="lang-wrap" id="lang-wrap">
+      <summary class="lang-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span id="lang-current">🇬🇧 English</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <div class="lang-dropdown">
+        <button type="button" class="lang-option" data-code="fr" id="opt-fr">🇫🇷 Français</button>
+        <button type="button" class="lang-option" data-code="de" id="opt-de">🇩🇪 Deutsch</button>
+        <button type="button" class="lang-option active" data-code="en" id="opt-en">🇬🇧 English</button>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main>
+<div class="pp-top-banner">
+  <span class="pp-en">Privacy Policy</span>
+  <span class="pp-sub">Politique de confidentialité &nbsp;·&nbsp; Datenschutzerklärung &nbsp;·&nbsp; Privacy Policy</span>
+</div>
+  <div data-page="fr" id="page-fr">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-inner">
+      <a href="https://buildplus.ch" class="back-link">← Retour à l'accueil</a>
+      <div class="hero-title-row">
+        <div class="hero-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <h1>Politique de confidentialité &amp; CGU</h1>
+      </div>
+      <p class="hero-desc">Les présentes CGU définissent les conditions d'utilisation de l'application Build+ et précisent les responsabilités de chaque partie concernant les données et les services tiers.</p>
+      <p class="hero-date">Dernière mise à jour : 14 août 2026</p>
+      <div class="badges">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> RGPD / DSGVO / GDPR</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> Google Play Policy</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> COPPA</span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY -->
+  <div class="section section-alt">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h2>Politique de confidentialité</h2></div>
+      <p class="section-desc">Comment Build+ gère vos données personnelles — conformément au RGPD</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span class="acc-label">Données collectées</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Données de profil (facultatives)</div><div class="item-desc">Nom, prénom, téléphone, email, nom de société — saisis volontairement par l'utilisateur dans l'écran Profil. Stockés uniquement en local sur l'appareil.</div></div><div class="item-card"><div class="item-label">Identifiant d'installation (android_id)</div><div class="item-desc">Utilisé uniquement en local pour la gestion de la licence d'essai. Non transmis à des serveurs externes.</div></div><div class="item-card"><div class="item-label">Données de facturation</div><div class="item-desc">Traitées exclusivement par Google Play. Build+ ne reçoit qu'un token de confirmation d'achat. Aucune donnée bancaire n'est collectée ni stockée par Build+.</div></div><div class="item-card"><div class="item-label">Données de messagerie chiffrée</div><div class="item-desc">Les messages et photos échangés via la messagerie Nostr transitent de façon chiffrée. Build+ ne conserve aucun message sur ses serveurs. Les données sont stockées uniquement sur les appareils des participants.</div></div><div class="item-card"><div class="item-label">Diagnostics techniques (opt-in)</div><div class="item-desc">Aucun rapport de crash ni donnée analytique n'est collecté sans consentement explicite de l'utilisateur.</div></div><div class="item-card"><div class="item-label">Permissions Android utilisées</div><div class="item-desc"><strong>Caméra (CAMERA)</strong> — utilisée pour prendre des photos de chantier directement depuis l'application. Les photos sont stockées localement sur l'appareil. Aucune photo n'est transmise sans action explicite de l'utilisateur.<br><br><strong>Microphone (RECORD_AUDIO)</strong> — utilisé pour enregistrer des notes vocales associées aux photos et rapports. Les enregistrements sont stockés localement sur l'appareil.<br><br><strong>Localisation (ACCESS_FINE_LOCATION)</strong> — utilisée pour positionner l'utilisateur en temps réel sur les plans de chantier importés. La localisation n'est jamais transmise à des serveurs externes et n'est active qu'en cours d'utilisation de la fonctionnalité de navigation sur plan.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+      <span class="acc-label">Finalité et base légale du traitement</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Fourniture du service</div><div class="item-desc">Le traitement des données de profil est nécessaire à l'exécution du contrat (CGU). Base légale : art. 6(1)(b) RGPD.</div></div><div class="item-card"><div class="item-label">Gestion de la période d'essai</div><div class="item-desc">L'identifiant d'installation est utilisé pour gérer la période d'essai gratuite. Base légale : intérêt légitime (art. 6(1)(f) RGPD).</div></div><div class="item-card"><div class="item-label">Traitement des paiements</div><div class="item-desc">Délégué à Google Play. Build+ traite uniquement la confirmation d'achat. Base légale : exécution du contrat.</div></div><div class="item-card"><div class="item-label">Sécurité et anti-fraude</div><div class="item-desc">Vérification de l'intégrité de l'application via Google Play Integrity API. Base légale : intérêt légitime.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>
+      <span class="acc-label">Conservation des données</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Données de profil</div><div class="item-desc">Conservées sur l'appareil tant que l'application est installée. Supprimées automatiquement à la désinstallation.</div></div><div class="item-card"><div class="item-label">Données d'essai (android_id)</div><div class="item-desc">Conservées localement pendant la durée d'installation. Supprimées à la désinstallation.</div></div><div class="item-card"><div class="item-label">Données de messagerie</div><div class="item-desc">Stockées localement sur l'appareil. L'utilisateur peut les supprimer à tout moment depuis l'application.</div></div><div class="item-card"><div class="item-label">Purchase Token Google</div><div class="item-desc">Conservé localement pour validation de licence. Supprimé à la désinstallation.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg></span>
+      <span class="acc-label">Droits de l'utilisateur (RGPD)</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p class="section-intro">Conformément au Règlement (UE) 2016/679 (RGPD), vous disposez des droits suivants concernant vos données personnelles :</p><div class="item-card"><div class="item-label">Droit d'accès (art. 15)</div><div class="item-desc">Vous pouvez consulter toutes vos données directement dans l'application (Profil, Projets, Photos).</div></div><div class="item-card"><div class="item-label">Droit de rectification (art. 16)</div><div class="item-desc">Vous pouvez modifier vos données de profil à tout moment dans les Paramètres de l'application.</div></div><div class="item-card"><div class="item-label">Droit à l'effacement (art. 17)</div><div class="item-desc">Vous pouvez supprimer vos données en désinstallant l'application, ou en utilisant la fonction « Supprimer mes données » dans Paramètres > Confidentialité.</div></div><div class="item-card"><div class="item-label">Droit à la portabilité (art. 20)</div><div class="item-desc">Vos projets et photos peuvent être exportés au format ZIP depuis l'application (Exporter > Sauvegarde locale).</div></div><div class="item-card"><div class="item-label">Droit d'opposition (art. 21)</div><div class="item-desc">Pour exercer vos droits ou pour toute question relative à vos données, contactez : le formulaire de contact sur buildplus.ch</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg></span>
+      <span class="acc-label">Âge minimum et protection des mineurs</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Âge minimum requis : 16 ans</div><div class="item-desc">Build+ est une application destinée aux professionnels du BTP. Elle n'est pas conçue pour les mineurs de moins de 16 ans. Conformément à l'article 8 du RGPD, le traitement des données des mineurs de moins de 16 ans requiert le consentement parental. Si vous pensez qu'un mineur a créé un compte, contactez-nous immédiatement à le formulaire de contact sur buildplus.ch.</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- ESSENTIALS -->
+  <div class="section">
+    <div class="container content-wrap">
+      <h2>L'essentiel en un coup d'œil</h2>
+      <p class="section-desc">Les points clés de votre utilisation de Build+</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="true">
+      <span class="acc-icon c-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+      <span class="acc-label">Responsabilité de l'utilisateur</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body open"><p>L'utilisateur est seul responsable des fichiers transmis, notamment en ce qui concerne leur contenu, leur légalité et les droits associés.</p><p>Build+ met à disposition des outils de transmission et de gestion de fichiers. L'application ne vérifie pas, ne contrôle pas et ne valide pas le contenu des fichiers échangés.</p></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span>
+      <span class="acc-label">Services tiers</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p>Certains échanges peuvent être effectués via des services tiers. L'application n'exerce aucun contrôle sur ces services et décline toute responsabilité liée à leur utilisation.</p><div class="service-grid">
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="svc-name">Service de messagerie chiffrée</div><div class="svc-desc">Transit éphémère — données non lues, non utilisées, non conservées.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+    <div><div class="svc-name">SwissTransfer.com</div><div class="svc-desc">Soumis au RGPD européen. Suppression selon la configuration de l'utilisateur.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+    <div><div class="svc-name">Google Play Billing</div><div class="svc-desc">Gestion des achats et abonnements. Soumis aux conditions Google. Build+ ne stocke aucune donnée de paiement.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="svc-name">Google Play Integrity API</div><div class="svc-desc">Vérifie l'intégrité de l'installation pour protéger contre la fraude. Aucune donnée personnelle transmise.</div></div></div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+      <span class="acc-label">Gestion des données</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p>Les données sont principalement stockées localement sur l'appareil de l'utilisateur. Aucun stockage centralisé n'est effectué par l'application.</p><div class="data-grid">
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Photos et vidéos de chantier</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Plans importés (PDF, PNG, JPG)</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Notes texte et annotations</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Dessins et formes sur photos</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Rapports PDF générés</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Liste des contacts et projets</div></div><p class="data-note">Ces données ne quittent jamais l'appareil de l'utilisateur, sauf lors d'un partage explicitement initié par celui-ci.</p></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- BILLING -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Achats, abonnements &amp; remboursements</h2></div>
+      <p class="section-desc">Tout ce que vous devez savoir sur les achats in-app Google Play</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="true">
+      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+      <span class="acc-label">Achats in-app et abonnements</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body open"><div class="item-card"><div class="item-label">Offres disponibles</div><div class="item-desc">Build+ Pro (abonnement annuel) — accès illimité à toutes les fonctionnalités. Plan Étudiant (abonnement annuel réduit, vérification éligibilité requise). Starter (achat unique, 30 jours / 350 photos).</div></div><div class="item-card"><div class="item-label">Gestion via Google Play</div><div class="item-desc">Tous les achats sont traités par Google Play Billing. Build+ ne collecte ni ne stocke aucune information bancaire ou de paiement.</div></div><div class="item-card"><div class="item-label">Renouvellement automatique</div><div class="item-desc">Les abonnements annuels se renouvellent automatiquement sauf résiliation au moins 24 heures avant la date de renouvellement. La résiliation s'effectue dans les paramètres de votre compte Google Play.</div></div><div class="item-card"><div class="item-label">Politique de remboursement</div><div class="item-desc">Les remboursements sont soumis à la politique de remboursement de Google Play. Build+ peut, à sa discrétion, accorder un remboursement dans les 48h suivant l'achat sur demande à le formulaire de contact sur buildplus.ch.</div></div><div class="item-card"><div class="item-label">Période d'essai gratuite</div><div class="item-desc">Build+ offre une période d'essai gratuite de 30 jours ou 350 photos (premier des deux). Aucune carte bancaire n'est requise pendant l'essai.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+      <span class="acc-label">Suppression du compte et des données</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Procédure de suppression</div><div class="item-desc">Pour supprimer l'ensemble de vos données : (1) Ouvrez Build+ > Paramètres > Confidentialité > Supprimer mes données, ou (2) Désinstallez l'application — toutes les données locales sont effacées automatiquement.</div></div><div class="item-card"><div class="item-label">Données de messagerie</div><div class="item-desc">Les messages chiffrés transitent via des relais Nostr. Vous pouvez supprimer vos données de messagerie locales depuis l'application. Les copies présentes sur les appareils de vos correspondants ne sont pas sous notre contrôle.</div></div><div class="item-card"><div class="item-label">Données Google Play</div><div class="item-desc">Pour les données liées à votre compte Google (achats, historique), la suppression s'effectue depuis les paramètres Google Play.</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- CGU FULL -->
+  <div class="section section-alt">
+    <div class="container content-wrap">
+      <h2>Conditions Générales d'Utilisation complètes</h2>
+      <p class="section-desc">Version intégrale applicable à l'application et au site</p>
+      <div class="articles">
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">1</span>Article 1 — Objet</div>
+          <p class="art-body">Les présentes Conditions Générales d'Utilisation (CGU) régissent l'utilisation de l'application mobile Build+ et du site buildplus.ch, édités par Build+ (le formulaire de contact sur buildplus.ch). En installant ou utilisant l'application, l'utilisateur accepte sans réserve les présentes conditions.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">2</span>Article 2 — Accès au service</div>
+          <p class="art-body">Build+ est une application mobile destinée aux professionnels du BTP. L'accès au service est conditionné à l'acceptation des présentes CGU. L'utilisateur doit être âgé d'au moins 16 ans. Build+ se réserve le droit de suspendre l'accès en cas de violation des présentes CGU.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">3</span>Article 3 — Description du service</div>
+          <p class="art-body">Build+ est un outil de gestion de chantier permettant la prise de photos, la gestion de plans, la génération de rapports PDF, la messagerie chiffrée entre professionnels et la sauvegarde cloud. Build+ propose une période d'essai gratuite de 30 jours ou 350 photos, puis un accès payant via abonnement annuel ou achat unique.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">4</span>Article 4 — Propriété intellectuelle</div>
+          <p class="art-body">L'ensemble des éléments constituant l'application Build+ (code source, design, marques, logos, contenus) est la propriété exclusive de Build+. Toute reproduction, modification, distribution ou exploitation non autorisée est strictement interdite. L'utilisateur conserve l'intégralité des droits sur les données qu'il crée avec l'application (photos, plans, rapports).</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">5</span>Article 5 — Données personnelles</div>
+          <p class="art-body">Build+ traite les données personnelles conformément au Règlement (UE) 2016/679 (RGPD). Le responsable de traitement est Build+ (le formulaire de contact sur buildplus.ch). Les données collectées sont limitées au strict nécessaire au fonctionnement du service et sont stockées principalement en local sur l'appareil de l'utilisateur.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">6</span>Article 6 — Achats et abonnements</div>
+          <p class="art-body">Les achats in-app sont traités via Google Play Billing. Les abonnements annuels se renouvellent automatiquement. L'utilisateur peut résilier à tout moment depuis les paramètres Google Play. Les remboursements sont soumis à la politique de Google Play. Build+ offre une période d'essai gratuite sans engagement.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">7</span>Article 7 — Limitation de responsabilité</div>
+          <p class="art-body">Build+ s'engage à assurer la disponibilité du service dans la mesure du possible, mais ne peut garantir une disponibilité permanente. La responsabilité de Build+ ne saurait être engagée en cas de perte de données résultant d'un dysfonctionnement de l'appareil, d'une mauvaise utilisation, ou d'un cas de force majeure.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">8</span>Article 8 — Modifications du service et des CGU</div>
+          <p class="art-body">Build+ se réserve le droit de modifier les présentes CGU et les fonctionnalités du service à tout moment. Les utilisateurs seront informés des modifications substantielles par notification dans l'application. L'utilisation continue du service après notification vaut acceptation des nouvelles conditions.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">9</span>Article 9 — Résiliation</div>
+          <p class="art-body">L'utilisateur peut cesser d'utiliser le service à tout moment en désinstallant l'application. En cas de violation des CGU, Build+ se réserve le droit de suspendre ou de résilier l'accès sans préavis.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">10</span>Article 10 — Droit applicable</div>
+          <p class="art-body">Les présentes CGU sont soumises au droit suisse et au droit européen (RGPD). En cas de litige, les parties s'efforceront de trouver une résolution amiable avant tout recours judiciaire. À défaut d'accord amiable, tout litige sera soumis aux tribunaux compétents.</p>
+        </div></div>
+    </div>
+  </div>
+
+  <!-- ANNEX -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><h2>Annexe — Site web buildplus.ch</h2></div>
+      <p class="section-desc">Conditions spécifiques au site vitrine</p>
+      <div class="articles">
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">1</span>Éditeur du site</div>
+          <p class="art-body">Le site buildplus.ch est édité par Build+ (le formulaire de contact sur buildplus.ch). Le site est un site vitrine sans collecte de données personnelles.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">2</span>Cookies</div>
+          <p class="art-body">Le site buildplus.ch n'utilise pas de cookies de traçage ou publicitaires. Des cookies techniques strictement nécessaires au fonctionnement du site peuvent être utilisés (mémorisation de la langue, préférences d'affichage). Ces cookies ne nécessitent pas de consentement (art. 5(3) Directive ePrivacy).</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">3</span>Formulaire de contact</div>
+          <p class="art-body">Les données saisies dans le formulaire de contact (nom, email, message) sont utilisées uniquement pour répondre à votre demande. Elles sont conservées pendant 12 mois maximum. Aucun partage avec des tiers. Contact : le formulaire de contact sur buildplus.ch.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">4</span>Liens externes</div>
+          <p class="art-body">Le site peut contenir des liens vers des sites tiers (Google Play, documentation). Build+ ne peut être tenu responsable du contenu de ces sites ni de leur politique de confidentialité.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">5</span>Propriété intellectuelle (site)</div>
+          <p class="art-body">Tous les éléments du site buildplus.ch (textes, images, logos, design) sont protégés par le droit d'auteur. Toute reproduction sans autorisation est interdite.</p>
+        </div></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-section">
+    <div class="container content-wrap-sm contact-inner">
+      <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <h2>Une question ?</h2>
+      <p style="color:var(--fg-muted);margin-top:8px">Pour toute question relative aux CGU, à vos données personnelles ou aux achats, utilisez le formulaire de contact sur buildplus.ch</p>
+      <div class="contact-btns">
+        <a href="mailto:support@buildplus.ch" class="btn btn-primary">Nous contacter</a>
+        
+      </div>
+    </div>
+  </div></div>
+  <div data-page="de" id="page-de">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-inner">
+      <a href="https://buildplus.ch" class="back-link">← Zurück zur Startseite</a>
+      <div class="hero-title-row">
+        <div class="hero-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <h1>Datenschutzerklärung &amp; AGB</h1>
+      </div>
+      <p class="hero-desc">Diese AGB legen die Nutzungsbedingungen der Build+-App fest und klären die Verantwortlichkeiten jeder Partei in Bezug auf Daten und Drittanbieterdienste.</p>
+      <p class="hero-date">Dernière mise à jour (Letzte Aktualisierung) : 14 August 2026</p>
+      <div class="badges">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> RGPD / DSGVO / GDPR</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> Google Play Policy</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> COPPA</span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY -->
+  <div class="section section-alt">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h2>Datenschutzerklärung</h2></div>
+      <p class="section-desc">Wie Build+ Ihre persönlichen Daten verwaltet — gemäß DSGVO</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span class="acc-label">Erhobene Daten</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Profildaten (optional)</div><div class="item-desc">Name, Vorname, Telefon, E-Mail, Firmenname — freiwillig vom Nutzer eingegeben. Nur lokal gespeichert.</div></div><div class="item-card"><div class="item-label">Installationskennung (android_id)</div><div class="item-desc">Nur lokal zur Verwaltung der Testlizenz verwendet. Nicht an externe Server übermittelt.</div></div><div class="item-card"><div class="item-label">Abrechnungsdaten</div><div class="item-desc">Ausschließlich von Google Play verarbeitet. Build+ erhält nur einen Kaufbestätigungs-Token. Keine Bankdaten gesammelt.</div></div><div class="item-card"><div class="item-label">Verschlüsselte Nachrichtendaten</div><div class="item-desc">Nachrichten und Fotos werden verschlüsselt übertragen. Build+ speichert keine Nachrichten auf seinen Servern.</div></div><div class="item-card"><div class="item-label">Technische Diagnosen (opt-in)</div><div class="item-desc">Kein Absturzbericht oder Analysedaten werden ohne ausdrückliche Einwilligung des Nutzers erhoben.</div></div><div class="item-card"><div class="item-label">Verwendete Android-Berechtigungen</div><div class="item-desc"><strong>Kamera (CAMERA)</strong> — zum Aufnehmen von Baustellenfotos direkt in der App. Fotos werden lokal gespeichert und nie ohne ausdrückliche Nutzeraktion übertragen.<br><br><strong>Mikrofon (RECORD_AUDIO)</strong> — zur Aufnahme von Sprachnotizen zu Fotos und Berichten. Aufnahmen werden lokal gespeichert.<br><br><strong>Standort (ACCESS_FINE_LOCATION)</strong> — zur Echtzeit-Positionierung des Nutzers auf importierten Bauplänen. Der Standort wird nie an externe Server übermittelt und ist nur aktiv, wenn die Plannavigation genutzt wird.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+      <span class="acc-label">Zweck und Rechtsgrundlage</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Dienstbereitstellung</div><div class="item-desc">Profilverarbeitung für Vertragserfüllung. Rechtsgrundlage: Art. 6(1)(b) DSGVO.</div></div><div class="item-card"><div class="item-label">Testperiodenverwaltung</div><div class="item-desc">Installationskennung für kostenlose Testperiode. Rechtsgrundlage: berechtigtes Interesse (Art. 6(1)(f) DSGVO).</div></div><div class="item-card"><div class="item-label">Zahlungsabwicklung</div><div class="item-desc">An Google Play delegiert. Rechtsgrundlage: Vertragserfüllung.</div></div><div class="item-card"><div class="item-label">Sicherheit & Anti-Betrug</div><div class="item-desc">Überprüfung der App-Integrität über Google Play Integrity API. Rechtsgrundlage: berechtigtes Interesse.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>
+      <span class="acc-label">Datenaufbewahrung</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Profildaten</div><div class="item-desc">Bis zur Deinstallation auf dem Gerät gespeichert.</div></div><div class="item-card"><div class="item-label">Testdaten (android_id)</div><div class="item-desc">Lokal während der Installationsdauer gespeichert.</div></div><div class="item-card"><div class="item-label">Nachrichtendaten</div><div class="item-desc">Lokal gespeichert. Jederzeit in der App löschbar.</div></div><div class="item-card"><div class="item-label">Google Play Purchase Token</div><div class="item-desc">Lokal für Lizenzvalidierung. Gelöscht bei Deinstallation.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg></span>
+      <span class="acc-label">Nutzerrechte (DSGVO)</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p class="section-intro">Gemäß der DSGVO haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p><div class="item-card"><div class="item-label">Auskunftsrecht (Art. 15)</div><div class="item-desc">Alle Daten direkt in der App einsehbar.</div></div><div class="item-card"><div class="item-label">Berichtigungsrecht (Art. 16)</div><div class="item-desc">Profildaten jederzeit in Einstellungen änderbar.</div></div><div class="item-card"><div class="item-label">Löschungsrecht (Art. 17)</div><div class="item-desc">Deinstallation oder Einstellungen > Datenschutz > Meine Daten löschen.</div></div><div class="item-card"><div class="item-label">Datenportabilität (Art. 20)</div><div class="item-desc">Projekte und Fotos als ZIP exportierbar.</div></div><div class="item-card"><div class="item-label">Widerspruchsrecht (Art. 21)</div><div class="item-desc">Kontakt: le formulaire de contact sur buildplus.ch</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg></span>
+      <span class="acc-label">Mindestalter</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Mindestalter: 16 Jahre</div><div class="item-desc">Build+ richtet sich an Bauprofis. Nicht für Minderjährige unter 16 Jahren. Kontakt: le formulaire de contact sur buildplus.ch</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- ESSENTIALS -->
+  <div class="section">
+    <div class="container content-wrap">
+      <h2>Das Wichtigste auf einen Blick</h2>
+      <p class="section-desc">Die wichtigsten Punkte Ihrer Build+-Nutzung</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="true">
+      <span class="acc-icon c-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+      <span class="acc-label">Verantwortung des Nutzers</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body open"><p>Der Nutzer ist allein verantwortlich für die übertragenen Dateien, insbesondere hinsichtlich ihres Inhalts, ihrer Rechtmäßigkeit und der damit verbundenen Rechte.</p><p>Build+ stellt Werkzeuge zur Übertragung und Verwaltung von Dateien bereit. Die Anwendung prüft, kontrolliert und validiert den Inhalt der ausgetauschten Dateien nicht.</p></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span>
+      <span class="acc-label">Drittanbieterdienste</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p>Einige Austausche können über Drittanbieterdienste erfolgen. Die Anwendung übt keine Kontrolle über diese Dienste aus und lehnt jede damit verbundene Haftung ab.</p><div class="service-grid">
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="svc-name">Verschlüsselter Nachrichtendienst</div><div class="svc-desc">Kurzlebiger Transit — Daten werden weder gelesen, noch verwendet, noch gespeichert.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+    <div><div class="svc-name">SwissTransfer.com</div><div class="svc-desc">Unterliegt der europäischen DSGVO. Löschung gemäß der Nutzerkonfiguration.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+    <div><div class="svc-name">Google Play Billing</div><div class="svc-desc">Abwicklung von Käufen und Abonnements. Build+ speichert keine Zahlungsdaten.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="svc-name">Google Play Integrity API</div><div class="svc-desc">Überprüft die Integrität der Installation. Keine persönlichen Daten übermittelt.</div></div></div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+      <span class="acc-label">Datenverwaltung</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p>Die Daten werden hauptsächlich lokal auf dem Gerät des Nutzers gespeichert. Es findet keine zentrale Speicherung durch die Anwendung statt.</p><div class="data-grid">
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Baustellenfotos und -videos</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Importierte Pläne (PDF, PNG, JPG)</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Textnotizen und Annotationen</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Zeichnungen und Formen auf Fotos</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Erstellte PDF-Berichte</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Kontakt- und Projektliste</div></div><p class="data-note">Diese Daten verlassen das Gerät des Nutzers nie, außer bei einer explizit vom Nutzer initiierten Freigabe.</p></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- BILLING -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Käufe, Abonnements &amp; Erstattungen</h2></div>
+      <p class="section-desc">Alles zu In-App-Käufen über Google Play</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="true">
+      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+      <span class="acc-label">In-App-Käufe und Abonnements</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body open"><div class="item-card"><div class="item-label">Verfügbare Angebote</div><div class="item-desc">Build+ Pro (Jahresabo), Studentenplan (reduziertes Jahresabo), Starter (Einmalkauf, 30 Tage / 350 Fotos).</div></div><div class="item-card"><div class="item-label">Google Play Billing</div><div class="item-desc">Alle Käufe über Google Play abgewickelt. Keine Zahlungsdaten bei Build+ gespeichert.</div></div><div class="item-card"><div class="item-label">Automatische Verlängerung</div><div class="item-desc">Jahresabos verlängern sich automatisch. Kündigung über Google Play-Kontoeinstellungen.</div></div><div class="item-card"><div class="item-label">Rückerstattungsrichtlinie</div><div class="item-desc">Gemäß Google Play-Richtlinie. Build+ kann nach eigenem Ermessen innerhalb von 48h erstatten: le formulaire de contact sur buildplus.ch</div></div><div class="item-card"><div class="item-label">Kostenlose Testphase</div><div class="item-desc">30 Tage oder 350 Fotos kostenlos. Keine Kreditkarte erforderlich.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+      <span class="acc-label">Datenlöschung</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Löschverfahren</div><div class="item-desc">Build+ > Einstellungen > Datenschutz > Meine Daten löschen, oder App deinstallieren.</div></div><div class="item-card"><div class="item-label">Nachrichtendaten</div><div class="item-desc">Lokal löschbar aus der App. Kopien auf anderen Geräten liegen außerhalb unserer Kontrolle.</div></div><div class="item-card"><div class="item-label">Google Play Daten</div><div class="item-desc">Über die Google Play-Kontoeinstellungen.</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- CGU FULL -->
+  <div class="section section-alt">
+    <div class="container content-wrap">
+      <h2>Vollständige Allgemeine Geschäftsbedingungen</h2>
+      <p class="section-desc">Vollständige Version für App und Website</p>
+      <div class="articles">
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">1</span>Artikel 1 — Gegenstand</div>
+          <p class="art-body">Diese AGB regeln die Nutzung der Build+-App und der Website buildplus.ch. Durch die Nutzung akzeptiert der Nutzer diese Bedingungen vorbehaltlos.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">2</span>Artikel 2 — Zugang zum Dienst</div>
+          <p class="art-body">Build+ ist für Bauprofis. Mindestalter: 16 Jahre. Build+ kann bei AGB-Verstoß den Zugang sperren.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">3</span>Artikel 3 — Leistungsbeschreibung</div>
+          <p class="art-body">Build+ ist ein Baustellen-Management-Tool mit Fotos, Plänen, PDF-Berichten, verschlüsseltem Messaging und Cloud-Backup. 30-tägige kostenlose Testphase oder 350 Fotos.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">4</span>Artikel 4 — Geistiges Eigentum</div>
+          <p class="art-body">Alle Elemente der Build+-App sind ausschließliches Eigentum von Build+. Nicht autorisierte Nutzung ist streng verboten.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">5</span>Artikel 5 — Personenbezogene Daten</div>
+          <p class="art-body">Build+ verarbeitet personenbezogene Daten gemäß DSGVO. Verantwortlicher: Build+ (le formulaire de contact sur buildplus.ch).</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">6</span>Artikel 6 — Käufe und Abonnements</div>
+          <p class="art-body">In-App-Käufe über Google Play Billing. Jahresabos verlängern sich automatisch. Kündigung jederzeit möglich.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">7</span>Artikel 7 — Haftungsbeschränkung</div>
+          <p class="art-body">Build+ strebt maximale Verfügbarkeit an, garantiert aber keine ununterbrochene Verfügbarkeit.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">8</span>Artikel 8 — AGB-Änderungen</div>
+          <p class="art-body">Build+ behält sich AGB-Änderungen vor. Nutzer werden per App-Benachrichtigung informiert.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">9</span>Artikel 9 — Kündigung</div>
+          <p class="art-body">Nutzung kann durch Deinstallation beendet werden. Bei AGB-Verstoß kann Build+ den Zugang sperren.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">10</span>Artikel 10 — Anwendbares Recht</div>
+          <p class="art-body">Diese AGB unterliegen dem Schweizer und europäischen Recht (DSGVO).</p>
+        </div></div>
+    </div>
+  </div>
+
+  <!-- ANNEX -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><h2>Anhang — Website buildplus.ch</h2></div>
+      <p class="section-desc">Spezifische Bedingungen für die Präsentationswebsite</p>
+      <div class="articles">
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">1</span>Website-Herausgeber</div>
+          <p class="art-body">buildplus.ch wird von Build+ herausgegeben (le formulaire de contact sur buildplus.ch).</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">2</span>Cookies</div>
+          <p class="art-body">buildplus.ch verwendet keine Tracking-Cookies. Nur technisch notwendige Cookies können verwendet werden.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">3</span>Kontaktformular</div>
+          <p class="art-body">Eingegebene Daten werden nur zur Beantwortung Ihrer Anfrage verwendet. Aufbewahrung: max. 12 Monate.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">4</span>Externe Links</div>
+          <p class="art-body">Die Website kann Links zu Drittseiten enthalten. Build+ ist nicht für deren Inhalt verantwortlich.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">5</span>Urheberrecht (Website)</div>
+          <p class="art-body">Alle Elemente von buildplus.ch sind urheberrechtlich geschützt.</p>
+        </div></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-section">
+    <div class="container content-wrap-sm contact-inner">
+      <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <h2>Fragen?</h2>
+      <p style="color:var(--fg-muted);margin-top:8px">Für alle Fragen zu AGB, Datenschutz oder Käufen: das Kontaktformular auf buildplus.ch</p>
+      <div class="contact-btns">
+        <a href="mailto:support@buildplus.ch" class="btn btn-primary">Kontakt aufnehmen</a>
+        
+      </div>
+    </div>
+  </div></div>
+  <div data-page="en" id="page-en">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-inner">
+      <a href="https://buildplus.ch" class="back-link">← Back to home</a>
+      <div class="hero-title-row">
+        <div class="hero-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <h1>Privacy Policy &amp; Terms and Conditions</h1>
+      </div>
+      <p class="hero-desc">These T&Cs define the terms of use of the Build+ application and clarify the responsibilities of each party regarding data and third-party services.</p>
+      <p class="hero-date">Dernière mise à jour (Last updated) : August 14, 2026</p>
+      <div class="badges">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> RGPD / DSGVO / GDPR</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> Google Play Policy</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg> COPPA</span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY -->
+  <div class="section section-alt">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h2>Privacy Policy</h2></div>
+      <p class="section-desc">How Build+ manages your personal data — GDPR compliant</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span class="acc-label">Data collected</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Profile data (optional)</div><div class="item-desc">Name, phone, email, company name — voluntarily entered. Stored locally only.</div></div><div class="item-card"><div class="item-label">Installation identifier (android_id)</div><div class="item-desc">Used locally only for trial licence management. Not transmitted to external servers.</div></div><div class="item-card"><div class="item-label">Billing data</div><div class="item-desc">Processed exclusively by Google Play. Build+ only receives a purchase confirmation token. No bank data collected.</div></div><div class="item-card"><div class="item-label">Encrypted messaging data</div><div class="item-desc">Messages and photos are transmitted encrypted. Build+ retains no messages on its servers.</div></div><div class="item-card"><div class="item-label">Technical diagnostics (opt-in)</div><div class="item-desc">No crash reports or analytics data collected without explicit user consent.</div></div><div class="item-card"><div class="item-label">Android permissions used</div><div class="item-desc"><strong>Camera (CAMERA)</strong> — used to take construction site photos directly from the app. Photos are stored locally on the device and never transmitted without explicit user action.<br><br><strong>Microphone (RECORD_AUDIO)</strong> — used to record voice notes associated with photos and reports. Recordings are stored locally on the device.<br><br><strong>Location (ACCESS_FINE_LOCATION)</strong> — used to position the user in real time on construction plans imported into the app. Location data is never transmitted to external servers and is only active while using the plan navigation feature.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+      <span class="acc-label">Purpose and legal basis</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Service provision</div><div class="item-desc">Profile data processing for contract performance. Legal basis: Art. 6(1)(b) GDPR.</div></div><div class="item-card"><div class="item-label">Trial management</div><div class="item-desc">Installation ID for free trial. Legal basis: legitimate interest (Art. 6(1)(f) GDPR).</div></div><div class="item-card"><div class="item-label">Payment processing</div><div class="item-desc">Delegated to Google Play. Legal basis: contract performance.</div></div><div class="item-card"><div class="item-label">Security & anti-fraud</div><div class="item-desc">App integrity verification via Google Play Integrity API. Legal basis: legitimate interest.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>
+      <span class="acc-label">Data retention</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Profile data</div><div class="item-desc">Stored on device until uninstalled.</div></div><div class="item-card"><div class="item-label">Trial data (android_id)</div><div class="item-desc">Stored locally during installation period.</div></div><div class="item-card"><div class="item-label">Messaging data</div><div class="item-desc">Stored locally. Deletable anytime from the app.</div></div><div class="item-card"><div class="item-label">Google Play Purchase Token</div><div class="item-desc">Stored locally for licence validation. Deleted on uninstall.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg></span>
+      <span class="acc-label">User rights (GDPR)</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p class="section-intro">Under GDPR, you have the following rights regarding your personal data:</p><div class="item-card"><div class="item-label">Right of access (Art. 15)</div><div class="item-desc">All data viewable directly in the app.</div></div><div class="item-card"><div class="item-label">Right to rectification (Art. 16)</div><div class="item-desc">Profile data editable anytime in Settings.</div></div><div class="item-card"><div class="item-label">Right to erasure (Art. 17)</div><div class="item-desc">Settings > Privacy > Delete my data, or uninstall the app.</div></div><div class="item-card"><div class="item-label">Data portability (Art. 20)</div><div class="item-desc">Projects and photos exportable as ZIP.</div></div><div class="item-card"><div class="item-label">Right to object (Art. 21)</div><div class="item-desc">Contact: le formulaire de contact sur buildplus.ch</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg></span>
+      <span class="acc-label">Minimum age</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Minimum age: 16</div><div class="item-desc">Build+ is for construction professionals. Not designed for users under 16. Contact: le formulaire de contact sur buildplus.ch</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- ESSENTIALS -->
+  <div class="section">
+    <div class="container content-wrap">
+      <h2>Key points at a glance</h2>
+      <p class="section-desc">The most important points about using Build+</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="true">
+      <span class="acc-icon c-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+      <span class="acc-label">User responsibility</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body open"><p>The user is solely responsible for the files transmitted, particularly regarding their content, legality and associated rights.</p><p>Build+ provides tools for transmitting and managing files. The application does not verify, control or validate the content of exchanged files.</p></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span>
+      <span class="acc-label">Third-party services</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p>Some exchanges may be carried out via third-party services. The application exercises no control over these services and accepts no liability related to their use.</p><div class="service-grid">
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="svc-name">Encrypted messaging service</div><div class="svc-desc">Ephemeral transit — data is neither read, used, nor retained.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>
+    <div><div class="svc-name">SwissTransfer.com</div><div class="svc-desc">Subject to European GDPR. Deletion according to user configuration.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+    <div><div class="svc-name">Google Play Billing</div><div class="svc-desc">Handles purchases and subscriptions. Build+ stores no payment data.</div></div></div>
+    <div class="service-card"><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div><div class="svc-name">Google Play Integrity API</div><div class="svc-desc">Verifies installation integrity. No personal data transmitted.</div></div></div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+      <span class="acc-label">Data management</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><p>Data is primarily stored locally on the user's device. No centralised storage is performed by the application.</p><div class="data-grid">
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Site photos and videos</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Imported plans (PDF, PNG, JPG)</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Text notes and annotations</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Drawings and shapes on photos</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Generated PDF reports</div>
+    <div class="data-item"><span class="data-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></span>Contact and project list</div></div><p class="data-note">This data never leaves the user's device, except when a share is explicitly initiated by the user.</p></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- BILLING -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><h2>Purchases, subscriptions &amp; refunds</h2></div>
+      <p class="section-desc">Everything about in-app purchases via Google Play</p>
+      <div class="accordion"><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="true">
+      <span class="acc-icon c-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+      <span class="acc-label">In-app purchases and subscriptions</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body open"><div class="item-card"><div class="item-label">Available plans</div><div class="item-desc">Build+ Pro (annual subscription), Student Plan (reduced annual, eligibility required), Starter (one-time purchase, 30 days / 350 photos).</div></div><div class="item-card"><div class="item-label">Google Play Billing</div><div class="item-desc">All purchases processed via Google Play. No payment data stored by Build+.</div></div><div class="item-card"><div class="item-label">Automatic renewal</div><div class="item-desc">Annual subscriptions auto-renew. Cancel anytime in Google Play account settings.</div></div><div class="item-card"><div class="item-label">Refund policy</div><div class="item-desc">Subject to Google Play refund policy. Build+ may at its discretion refund within 48h: le formulaire de contact sur buildplus.ch</div></div><div class="item-card"><div class="item-label">Free trial</div><div class="item-desc">30 days or 350 photos free. No credit card required.</div></div></div>
+  </div><div class="acc-item">
+    <button class="acc-btn" onclick="toggle(this)" aria-expanded="false">
+      <span class="acc-icon c-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg></span>
+      <span class="acc-label">Data deletion</span>
+      <span class="acc-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="6 9 12 15 18 9"/></svg></span>
+    </button>
+    <div class="acc-body"><div class="item-card"><div class="item-label">Deletion procedure</div><div class="item-desc">Build+ > Settings > Privacy > Delete my data, or uninstall the app.</div></div><div class="item-card"><div class="item-label">Messaging data</div><div class="item-desc">Deletable from the app. Copies on other devices are outside our control.</div></div><div class="item-card"><div class="item-label">Google Play data</div><div class="item-desc">Via Google Play account settings.</div></div></div>
+  </div></div>
+    </div>
+  </div>
+
+  <!-- CGU FULL -->
+  <div class="section section-alt">
+    <div class="container content-wrap">
+      <h2>Full Terms and Conditions</h2>
+      <p class="section-desc">Complete version applicable to the app and website</p>
+      <div class="articles">
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">1</span>Article 1 — Purpose</div>
+          <p class="art-body">These Terms and Conditions govern the use of the Build+ app and buildplus.ch. By using the application, the user unconditionally accepts these terms.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">2</span>Article 2 — Access to the service</div>
+          <p class="art-body">Build+ is for construction professionals. Minimum age: 16. Build+ may suspend access for T&C violations.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">3</span>Article 3 — Service description</div>
+          <p class="art-body">Build+ is a construction site management tool with photos, plans, PDF reports, encrypted messaging and cloud backup. 30-day or 350-photo free trial offered.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">4</span>Article 4 — Intellectual property</div>
+          <p class="art-body">All elements of the Build+ app are the exclusive property of Build+. Unauthorised use is strictly prohibited.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">5</span>Article 5 — Personal data</div>
+          <p class="art-body">Build+ processes personal data in accordance with GDPR. Data controller: Build+ (le formulaire de contact sur buildplus.ch).</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">6</span>Article 6 — Purchases and subscriptions</div>
+          <p class="art-body">In-app purchases via Google Play Billing. Annual subscriptions auto-renew. Cancel anytime via Google Play.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">7</span>Article 7 — Limitation of liability</div>
+          <p class="art-body">Build+ endeavours to ensure service availability but cannot guarantee permanent availability.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">8</span>Article 8 — Amendments</div>
+          <p class="art-body">Build+ reserves the right to amend these T&Cs. Users will be notified of material changes in-app.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">9</span>Article 9 — Termination</div>
+          <p class="art-body">Users may terminate by uninstalling the app. Build+ may suspend access for T&C violations.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">10</span>Article 10 — Applicable law</div>
+          <p class="art-body">These T&Cs are subject to Swiss and European law (GDPR).</p>
+        </div></div>
+    </div>
+  </div>
+
+  <!-- ANNEX -->
+  <div class="section">
+    <div class="container content-wrap">
+      <div class="section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><h2>Annex — buildplus.ch website</h2></div>
+      <p class="section-desc">Specific terms for the website</p>
+      <div class="articles">
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">1</span>Website publisher</div>
+          <p class="art-body">buildplus.ch is published by Build+ (le formulaire de contact sur buildplus.ch).</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">2</span>Cookies</div>
+          <p class="art-body">buildplus.ch does not use tracking cookies. Only strictly necessary technical cookies may be used.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">3</span>Contact form</div>
+          <p class="art-body">Data entered in the contact form is used solely to respond to your request. Retained for max. 12 months.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">4</span>External links</div>
+          <p class="art-body">The site may contain links to third-party sites. Build+ is not responsible for their content.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-title"><span class="art-num">5</span>Intellectual property (website)</div>
+          <p class="art-body">All elements of buildplus.ch are protected by copyright.</p>
+        </div></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-section">
+    <div class="container content-wrap-sm contact-inner">
+      <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <h2>Questions?</h2>
+      <p style="color:var(--fg-muted);margin-top:8px">For any question about T&Cs, your data or purchases, use our the contact form on buildplus.ch</p>
+      <div class="contact-btns">
+        <a href="mailto:support@buildplus.ch" class="btn btn-primary">Contact us</a>
+        
+      </div>
+    </div>
+  </div></div>
+</main>
+
+<footer>
+  Build+ © 2026 — com.chantierlocal.app — <a href="https://buildplus.ch">buildplus.ch</a>
+</footer>
+
+<script>
+
+// ─── SVG icons ──────────────────────────────────────────────────────────────
+const IC = {
+  fileText:    '<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>',
+  alert:       '<circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>',
+  server:      '<rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>',
+  database:    '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>',
+  eye:         '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>',
+  lock:        '<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+  refresh:     '<polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>',
+  userX:       '<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/>',
+  baby:        '<path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/>',
+  creditCard:  '<rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/>',
+  trash:       '<polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/>',
+  shield:      '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+  globe:       '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+  mail:        '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
+  check2:      '<path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/>',
+  arrowLeft:   '<line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>',
+  externalLink:'<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>',
+  chevron:     '<polyline points="6 9 12 15 18 9"/>',
+};
+
+function svg(name, size){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="${size||20}" height="${size||20}">${IC[name]}</svg>`;
+}
+
+function icon(name, colorClass, size){
+  return `<span class="acc-icon ${colorClass}">${svg(name, size||20)}</span>`;
+}
+
+
+const NAV = {
+  home:     {fr:'Accueil', de:'Startseite', en:'Home'},
+  features: {fr:'Fonctionnalités', de:'Funktionen', en:'Features'},
+  security: {fr:'Sécurité', de:'Sicherheit', en:'Security'},
+  pricing:  {fr:'Tarifs', de:'Preise', en:'Pricing'},
+  contact:  {fr:'Contact', de:'Kontakt', en:'Contact'},
+};
+
+
+const FEAT = {
+  fr:[
+    {l:'Photographier et localiser', p:'/localiser'},
+    {l:'Commenter les photos', p:'/commenter'},
+    {l:'Dessiner', p:'/dessiner'},
+    {l:'Attribuer des tâches', p:'/attributions'},
+    {l:'Planning et suivi', p:'/planning'},
+    {l:'Transmettre (Messagerie)', p:'/messagerie'},
+    {l:'Générer (Rapports PDF)', p:'/rapports'},
+    {l:'Tableau des réserves', p:'/reserves'},
+    {l:"Carnet d'adresses global", p:'/carnet'},
+    {l:'Vidéos tutoriels', p:'/videos'},
+  ],
+  de:[
+    {l:'Fotografieren & Lokalisieren', p:'/localiser'},
+    {l:'Fotos kommentieren', p:'/commenter'},
+    {l:'Zeichnen', p:'/dessiner'},
+    {l:'Aufgaben zuweisen', p:'/attributions'},
+    {l:'Planung & Verfolgung', p:'/planning'},
+    {l:'Übermitteln (Nachrichten)', p:'/messagerie'},
+    {l:'Erstellen (PDF-Berichte)', p:'/rapports'},
+    {l:'Mängelübersicht', p:'/reserves'},
+    {l:'Globales Adressbuch', p:'/carnet'},
+    {l:'Tutorial-Videos', p:'/videos'},
+  ],
+  en:[
+    {l:'Photograph & locate', p:'/localiser'},
+    {l:'Comment on photos', p:'/commenter'},
+    {l:'Draw', p:'/dessiner'},
+    {l:'Assign tasks', p:'/attributions'},
+    {l:'Planning & tracking', p:'/planning'},
+    {l:'Send (Messaging)', p:'/messagerie'},
+    {l:'Generate (PDF Reports)', p:'/rapports'},
+    {l:'Punch list', p:'/reserves'},
+    {l:'Global address book', p:'/carnet'},
+    {l:'Tutorial videos', p:'/videos'},
+  ]
+};
+
+
+const LANG_LABELS = {
+  fr:{flag:'🇫🇷',label:'Français'},
+  de:{flag:'🇩🇪',label:'Deutsch'},
+  en:{flag:'🇬🇧',label:'English'},
+};
+
+
+
+function toggle(btn){
+  const open = btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded', !open);
+  btn.nextElementSibling.classList.toggle('open', !open);
+}
+
+function updateNav(lang){
+  document.querySelectorAll('[data-key]').forEach(function(el){
+    const k = el.getAttribute('data-key');
+    if(NAV[k]) el.textContent = NAV[k][lang];
+  });
+  const feat = document.getElementById('feat-dropdown');
+  if(feat) feat.innerHTML = FEAT[lang].map(function(f){return '<a href="https://buildplus.ch'+f.p+'">'+f.l+'</a>';}).join('');
+  const lbl = LANG_LABELS[lang];
+  document.getElementById('lang-current').textContent = lbl.flag+' '+lbl.label;
+  document.querySelectorAll('.lang-option').forEach(function(b){
+    const code = b.getAttribute('data-code');
+    b.classList.toggle('active', code===lang);
+  });
+  document.documentElement.lang = lang;
+}
+
+var PAGES = ['fr','de','en'];
+var LANG_LABELS = {fr:'🇫🇷 Français', de:'🇩🇪 Deutsch', en:'🇬🇧 English'};
+
+function setLang(lang){
+  // Switch visible section
+  PAGES.forEach(function(code){
+    var el = document.getElementById('page-'+code);
+    if(el) el.style.display = (code===lang) ? 'block' : 'none';
+  });
+  // Update current label
+  var cur = document.getElementById('lang-current');
+  if(cur) cur.textContent = LANG_LABELS[lang] || lang;
+  // Update active state on options
+  PAGES.forEach(function(code){
+    var opt = document.getElementById('opt-'+code);
+    if(opt) opt.classList.toggle('active', code===lang);
+  });
+  // Update html lang attribute
+  document.documentElement.lang = lang;
+  // Update nav labels (non-blocking)
+  try { updateNav(lang); } catch(e){ console.warn('updateNav error:', e); }
+  // Close dropdown
+  var wrap = document.getElementById('lang-wrap');
+  if(wrap) wrap.removeAttribute('open');
+}
+
+// Wire up option buttons via addEventListener (works everywhere, incl. local files)
+document.addEventListener('DOMContentLoaded', function(){
+  PAGES.forEach(function(code){
+    var opt = document.getElementById('opt-'+code);
+    if(opt) opt.addEventListener('click', function(){ setLang(code); });
+  });
+});
+
+// Close details dropdown when clicking outside
+document.addEventListener('click', function(e){
+  var wrap = document.getElementById('lang-wrap');
+  if(wrap && !wrap.contains(e.target)) wrap.removeAttribute('open');
+});
+
+window.addEventListener('scroll', function(){
+  document.getElementById('site-header').classList.toggle('scrolled', scrollY > 20);
+});
+
+// Init — default language: English
+setLang('en');
+
+</script>
+</body>
+</html>
